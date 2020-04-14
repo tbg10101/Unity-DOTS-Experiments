@@ -1,0 +1,42 @@
+# =============== #
+# Unity generated #
+# =============== #
+/Temp
+/Obj
+/UnityGenerated
+/Library
+/Logs
+/UserSettings
+
+*.sln
+*.csproj
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ======= #
+# Blender #
+# ======= #
+*.blend1
+*.blend1.meta
+
+# ==================== #
+# IDEA Rider generated #
+# ==================== #
+.idea
+*.DotSettings.user
+
+# ===== #
+# Build #
+# ===== #
+/Builds
