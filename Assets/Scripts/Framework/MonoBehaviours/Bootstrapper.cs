@@ -43,9 +43,7 @@ namespace Software10101.DOTS.MonoBehaviours {
         private SystemTypeReference[] _presentationSystems = new SystemTypeReference[0];
 
         protected virtual void Start() {
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             // set up systems
-
             SimulationSystemGroup simGroup = GetOrCreateSystem<SimulationSystemGroup>(typeof(FixedUpdate));
             GetOrCreateSystem<SimulationDestroySystem>(simGroup);
             AddSystem(simGroup, new PrefabSpawnSystem(this));
@@ -64,9 +62,7 @@ namespace Software10101.DOTS.MonoBehaviours {
             GetOrCreateSystem<PostUpdatePresentationEntityCommandBufferSystem>(presGroup);
             GetOrCreateSystem<PresentationDestroySystem>(presGroup);
 
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             // set up archetypes
-
             EntityManager entityManager = EntityManager;
 
             for (int i = 0; i < _prefabs.Length; i++) {
